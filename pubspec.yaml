@@ -1,7 +1,9 @@
 name: device_info_plugin
 description: "A new Flutter plugin project."
 version: 0.0.1
-homepage:
+repository: https://github.com/Thixq/device_info_plugin
+
+homepage:  
 
 environment:
   sdk: ^3.11.5
@@ -10,6 +12,7 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+  pigeon: ^27.1.0
   plugin_platform_interface: ^2.0.2
 
 dev_dependencies:
