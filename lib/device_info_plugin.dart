@@ -1,8 +1,11 @@
+library;
 
-import 'device_info_plugin_platform_interface.dart';
+import 'src/messages.g.dart';
 
 class DeviceInfoPlugin {
-  Future<String?> getPlatformVersion() {
-    return DeviceInfoPluginPlatform.instance.getPlatformVersion();
+  final DeviceInfoHostApi _api = DeviceInfoHostApi();
+
+  Future<DeviceInfoMessage> getDeviceInfo() {
+    return _api.getDeviceInfo();
   }
 }
