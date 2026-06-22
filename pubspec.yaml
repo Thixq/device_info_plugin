@@ -17,6 +17,11 @@ melos:
     intellij:
       false
   sdkPath: .fvm/flutter_sdk
+  version:
+    linktoCommit: true
+    workspaceChanelog: true
+    changelogCommitBodies:
+      include: true
   command:
     bootstrap:
       runPubGetInParallel: true
