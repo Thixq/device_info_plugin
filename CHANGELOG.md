@@ -15,6 +15,27 @@ Packages with breaking changes:
 
 Packages with other changes:
 
+ - [`device_info_plugin` - `v0.0.3`](#device_info_plugin---v003)
+
+---
+
+#### `device_info_plugin` - `v0.0.3`
+
+ - **FEAT**: add ios plugin. ([21179a2f](https://github.com/Thixq/device_info_plugin.git/commit/21179a2fb5d892fd969dfad3daed1cba21a6b8b1))
+
+
+## 2026-06-22
+
+### Changes
+
+---
+
+Packages with breaking changes:
+
+ - There are no breaking changes in this release.
+
+Packages with other changes:
+
  - [`device_info_plugin` - `v0.0.2`](#device_info_plugin---v002)
 
 ---
