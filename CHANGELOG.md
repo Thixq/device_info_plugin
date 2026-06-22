@@ -15,6 +15,27 @@ Packages with breaking changes:
 
 Packages with other changes:
 
+ - [`device_info_plugin_ios` - `v0.0.2`](#device_info_plugin_ios---v002)
+
+---
+
+#### `device_info_plugin_ios` - `v0.0.2`
+
+ - **FEAT**: initialize device_info_plugin_ios package structure. ([6b982611](https://github.com/Thixq/device_info_plugin.git/commit/6b9826112fb8466f155c8be505ff92c036a9e555))
+
+
+## 2026-06-22
+
+### Changes
+
+---
+
+Packages with breaking changes:
+
+ - There are no breaking changes in this release.
+
+Packages with other changes:
+
  - [`device_info_plugin` - `v0.0.3`](#device_info_plugin---v003)
 
 ---
