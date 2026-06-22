@@ -15,6 +15,32 @@ Packages with breaking changes:
 
 Packages with other changes:
 
+ - [`device_info_plugin_ios` - `v0.0.3`](#device_info_plugin_ios---v003)
+ - [`device_info_plugin_platform_interface` - `v0.0.2`](#device_info_plugin_platform_interface---v002)
+
+---
+
+#### `device_info_plugin_ios` - `v0.0.3`
+
+ - **FEAT**(ios): configure pigeon and migrate to very_good_analysis. ([4d2c4189](https://github.com/Thixq/device_info_plugin.git/commit/4d2c4189968a593a42f67faf8dc4c62510aee95d))
+
+#### `device_info_plugin_platform_interface` - `v0.0.2`
+
+ - **FEAT**: create platform interface package. ([b7311584](https://github.com/Thixq/device_info_plugin.git/commit/b7311584644ca7137702d1253575147847c8d11d))
+
+
+## 2026-06-22
+
+### Changes
+
+---
+
+Packages with breaking changes:
+
+ - There are no breaking changes in this release.
+
+Packages with other changes:
+
  - [`device_info_plugin_ios` - `v0.0.2`](#device_info_plugin_ios---v002)
 
 ---
