@@ -1,32 +1,26 @@
-name: device_info_plugin
-description: "A new Flutter plugin project."
+name: device_info_plugin_monorepo
+repository: https://github.com/Thixq/device_info_plugin.git
 version: 0.0.1
-repository: https://github.com/Thixq/device_info_plugin
+description: A plugin to get device information in Flutter.
 
-homepage:  
+environment: 
+  sdk: ">=3.11.5 <4.0.0"
 
-environment:
-  sdk: ^3.11.5
-  flutter: '>=3.3.0'
-
-dependencies:
-  flutter:
-    sdk: flutter
-  pigeon: ^27.1.0
-  plugin_platform_interface: ^2.0.2
+workspace:
+  - device_info_plugin/
 
 dev_dependencies:
-  flutter_test:
-    sdk: flutter
-  flutter_lints: ^6.0.0
+  melos: ^7.8.2
 
-flutter:
-  plugin:
-    platforms:
-      android:
-        package: com.example.device_info_plugin
-        pluginClass: DeviceInfoPlugin
-      ios:
-        pluginClass: DeviceInfoPlugin
+melos:
+  ide:
+    intellij:
+      false
+  sdkPath: .fvm/flutter_sdk
+  command:
+    bootstrap:
+      runPubGetInParallel: true
+      hooks:
+        post: |
+          melos exec --depends-on="build_runner" -- "dart run build_runner build --delete-conflicting-outputs"
 
-  
