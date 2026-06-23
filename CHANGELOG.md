@@ -3,6 +3,33 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## 2026-06-23
+
+### Changes
+
+---
+
+Packages with breaking changes:
+
+ - There are no breaking changes in this release.
+
+Packages with other changes:
+
+ - [`device_info_plugin_ios` - `v0.0.4`](#device_info_plugin_ios---v004)
+ - [`device_info_plugin_platform_interface` - `v0.0.3`](#device_info_plugin_platform_interface---v003)
+
+---
+
+#### `device_info_plugin_ios` - `v0.0.4`
+
+ - **FEAT**(ios): implement native iOS plugin using Pigeon, add tests, and update pubspec. ([7e44e087](https://github.com/Thixq/device_info_plugin.git/commit/7e44e08779f212ac0589d37d9c7d74eb56580bfa))
+ - **FEAT**(ios): setup native ios plugin structure and generate pigeon models. ([299ae008](https://github.com/Thixq/device_info_plugin.git/commit/299ae008c57b80212cb65a4d8787b78eab22179f))
+
+#### `device_info_plugin_platform_interface` - `v0.0.3`
+
+ - **FEAT**(platform_interface): setup federated interface, tests, and models. ([7bde6b6e](https://github.com/Thixq/device_info_plugin.git/commit/7bde6b6e2af5480045f75c4b7ec07670e8a095eb))
+
+
 ## 2026-06-22
 
 ### Changes
