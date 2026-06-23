@@ -185,17 +185,17 @@ private func nilOrValue<T>(_ value: Any?) -> T? {
 
 
 /// Generated class from Pigeon that represents data sent in messages.
-struct DeviceInfo: Hashable, CustomStringConvertible {
+struct DeviceInfoIOS: Hashable, CustomStringConvertible {
   var deviceModel: String? = nil
   var osVersion: String? = nil
 
 
   // swift-format-ignore: AlwaysUseLowerCamelCase
-  static func fromList(_ pigeonVar_list: [Any?]) -> DeviceInfo? {
+  static func fromList(_ pigeonVar_list: [Any?]) -> DeviceInfoIOS? {
     let deviceModel: String? = nilOrValue(pigeonVar_list[0])
     let osVersion: String? = nilOrValue(pigeonVar_list[1])
 
-    return DeviceInfo(
+    return DeviceInfoIOS(
       deviceModel: deviceModel,
       osVersion: osVersion
     )
@@ -206,7 +206,7 @@ struct DeviceInfo: Hashable, CustomStringConvertible {
       osVersion,
     ]
   }
-  static func == (lhs: DeviceInfo, rhs: DeviceInfo) -> Bool {
+  static func == (lhs: DeviceInfoIOS, rhs: DeviceInfoIOS) -> Bool {
     if Swift.type(of: lhs) != Swift.type(of: rhs) {
       return false
     }
@@ -214,13 +214,13 @@ struct DeviceInfo: Hashable, CustomStringConvertible {
   }
 
   func hash(into hasher: inout Hasher) {
-    hasher.combine("DeviceInfo")
+    hasher.combine("DeviceInfoIOS")
     MessagesPigeonInternal.deepHash(value: deviceModel, hasher: &hasher)
     MessagesPigeonInternal.deepHash(value: osVersion, hasher: &hasher)
   }
 
   public var description: String {
-    return "DeviceInfo(deviceModel: \(String(describing: deviceModel)), osVersion: \(String(describing: osVersion)))"
+    return "DeviceInfoIOS(deviceModel: \(String(describing: deviceModel)), osVersion: \(String(describing: osVersion)))"
   }
 }
 
@@ -228,7 +228,7 @@ private class MessagesPigeonCodecReader: FlutterStandardReader {
   override func readValue(ofType type: UInt8) -> Any? {
     switch type {
     case 129:
-      return DeviceInfo.fromList(self.readValue() as! [Any?])
+      return DeviceInfoIOS.fromList(self.readValue() as! [Any?])
     default:
       return super.readValue(ofType: type)
     }
@@ -237,7 +237,7 @@ private class MessagesPigeonCodecReader: FlutterStandardReader {
 
 private class MessagesPigeonCodecWriter: FlutterStandardWriter {
   override func writeValue(_ value: Any) {
-    if let value = value as? DeviceInfo {
+""    if let value = value as? DeviceInfoIOS {
       super.writeByte(129)
       super.writeValue(value.toList())
     } else {
@@ -262,7 +262,7 @@ class MessagesPigeonCodec: FlutterStandardMessageCodec, @unchecked Sendable {
 
 /// Generated protocol from Pigeon that represents a handler of messages from Flutter.
 protocol DeviceInfoHostApi {
-  func getDeviceInfo() throws -> DeviceInfo
+  func getDeviceInfo() throws -> DeviceInfoIOS
 }
 
 /// Generated setup class from Pigeon to handle messages through the `binaryMessenger`.

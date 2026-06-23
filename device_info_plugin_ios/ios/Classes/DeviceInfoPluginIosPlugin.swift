@@ -1,19 +1,19 @@
 import Flutter
 import UIKit
 
-public class DeviceInfoPluginIosPlugin: NSObject, FlutterPlugin {
+public class DeviceInfoPluginPlugin: NSObject, FlutterPlugin, DeviceInfoHostApi {
   public static func register(with registrar: FlutterPluginRegistrar) {
-    let channel = FlutterMethodChannel(name: "device_info_plugin_ios", binaryMessenger: registrar.messenger())
     let instance = DeviceInfoPluginIosPlugin()
-    registrar.addMethodCallDelegate(instance, channel: channel)
+    // Setup Pigeon API using the generated setup class
+    DeviceInfoHostApiSetup.setUp(binaryMessenger: registrar.messenger(), api: instance)
   }
 
-  public func handle(_ call: FlutterMethodCall, result: @escaping FlutterResult) {
-    switch call.method {
-    case "getPlatformVersion":
-      result("iOS " + UIDevice.current.systemVersion)
-    default:
-      result(FlutterMethodNotImplemented)
-    }
+  public func getDeviceInfo() throws -> DeviceInfoIOS {
+    // Get real iOS device information
+    let deviceModel = UIDevice.current.model // e.g. "iPhone", "iPad"
+    let osVersion = UIDevice.current.systemVersion // e.g. "17.4"
+    
+    // Return the Pigeon-generated data object
+    return DeviceInfoIOS(deviceModel: deviceModel, osVersion: osVersion)
   }
 }

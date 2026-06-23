@@ -1,3 +1,5 @@
+// ignore_for_file: document_ignores, one_member_abstracts
+
 import 'package:pigeon/pigeon.dart';
 
 @ConfigurePigeon(
@@ -6,12 +8,12 @@ import 'package:pigeon/pigeon.dart';
     swiftOut: 'ios/Classes/Messages.g.swift',
   ),
 )
-class DeviceInfo {
+class DeviceInfoIOS {
   String? deviceModel;
   String? osVersion;
 }
 
 @HostApi()
 abstract class DeviceInfoHostApi {
-  DeviceInfo getDeviceInfo();
+  DeviceInfoIOS getDeviceInfo();
 }
