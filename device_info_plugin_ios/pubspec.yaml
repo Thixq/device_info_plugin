@@ -15,3 +15,10 @@ dev_dependencies:
   pigeon: ^27.1.0
   test: ^1.25.6
   very_good_analysis: ^10.2.0
+
+flutter:
+  plugin:
+    implements: device_info_plugin
+    platforms:
+      ios:
+        pluginClass: DeviceInfoPluginIosPlugin
