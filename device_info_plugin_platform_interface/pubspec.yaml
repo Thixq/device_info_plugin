@@ -1,0 +1,20 @@
+name: device_info_plugin_platform_interface
+description: "A new Flutter package project."
+version: 0.0.2
+homepage:
+
+environment:
+  sdk: ^3.11.5
+  flutter: ">=1.17.0"
+resolution: workspace
+
+dependencies:
+  flutter:
+    sdk: flutter
+  plugin_platform_interface: ^2.1.8
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  pigeon: ^27.1.0
+  very_good_analysis: ^10.2.0
