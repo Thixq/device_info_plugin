@@ -1,3 +1,7 @@
+## 0.0.4+1
+
+ - **REFACTOR**(ios): rename plugin classes and add example app. ([d2e3f749](https://github.com/Thixq/device_info_plugin.git/commit/d2e3f7490b6fd5e7e412f17e00f799d4ab48773a))
+
 ## 0.0.4
 
  - **FEAT**(ios): implement native iOS plugin using Pigeon, add tests, and update pubspec. ([7e44e087](https://github.com/Thixq/device_info_plugin.git/commit/7e44e08779f212ac0589d37d9c7d74eb56580bfa))

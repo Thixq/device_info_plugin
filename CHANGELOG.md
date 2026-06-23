@@ -3,6 +3,27 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## 2026-06-24
+
+### Changes
+
+---
+
+Packages with breaking changes:
+
+ - There are no breaking changes in this release.
+
+Packages with other changes:
+
+ - [`device_info_plugin_ios` - `v0.0.4+1`](#device_info_plugin_ios---v0041)
+
+---
+
+#### `device_info_plugin_ios` - `v0.0.4+1`
+
+ - **REFACTOR**(ios): rename plugin classes and add example app. ([d2e3f749](https://github.com/Thixq/device_info_plugin.git/commit/d2e3f7490b6fd5e7e412f17e00f799d4ab48773a))
+
+
 ## 2026-06-23
 
 ### Changes
