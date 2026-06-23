@@ -3,12 +3,12 @@ import UIKit
 
 public class DeviceInfoPluginPlugin: NSObject, FlutterPlugin, DeviceInfoHostApi {
   public static func register(with registrar: FlutterPluginRegistrar) {
-    let instance = DeviceInfoPluginIosPlugin()
+    let instance = DeviceInfoPluginPlugin()
     // Setup Pigeon API using the generated setup class
     DeviceInfoHostApiSetup.setUp(binaryMessenger: registrar.messenger(), api: instance)
   }
 
-  public func getDeviceInfo() throws -> DeviceInfoIOS {
+  func getDeviceInfo() throws -> DeviceInfoIOS {
     // Get real iOS device information
     let deviceModel = UIDevice.current.model // e.g. "iPhone", "iPad"
     let osVersion = UIDevice.current.systemVersion // e.g. "17.4"

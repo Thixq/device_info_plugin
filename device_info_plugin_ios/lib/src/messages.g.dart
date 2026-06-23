@@ -10,9 +10,9 @@ import 'package:flutter/services.dart';
 import 'package:meta/meta.dart' show immutable, protected, visibleForTesting;
 
 Object? _extractReplyValueOrThrow(
-  List<Object?>? replyList,
-  String channelName, {
-  required bool isNullValid,
+    List<Object?>? replyList,
+    String channelName, {
+    required bool isNullValid,
 }) {
   if (replyList == null) {
     throw PlatformException(
@@ -46,9 +46,8 @@ bool _deepEquals(Object? a, Object? b) {
   }
   if (a is List && b is List) {
     return a.length == b.length &&
-        a.indexed.every(
-          ((int, dynamic) item) => _deepEquals(item.$2, b[item.$1]),
-        );
+        a.indexed
+            .every(((int, dynamic) item) => _deepEquals(item.$2, b[item.$1]));
   }
   if (a is Map && b is Map) {
     if (a.length != b.length) {
@@ -97,6 +96,7 @@ int _deepHash(Object? value) {
   return value.hashCode;
 }
 
+
 class DeviceInfoIOS {
   DeviceInfoIOS({
     this.deviceModel,
@@ -115,8 +115,7 @@ class DeviceInfoIOS {
   }
 
   Object encode() {
-    return _toList();
-  }
+    return _toList();  }
 
   static DeviceInfoIOS decode(Object result) {
     result as List<Object?>;
@@ -135,8 +134,7 @@ class DeviceInfoIOS {
     if (identical(this, other)) {
       return true;
     }
-    return _deepEquals(deviceModel, other.deviceModel) &&
-        _deepEquals(osVersion, other.osVersion);
+    return _deepEquals(deviceModel, other.deviceModel) && _deepEquals(osVersion, other.osVersion);
   }
 
   @override
@@ -149,6 +147,7 @@ class DeviceInfoIOS {
   }
 }
 
+
 class _PigeonCodec extends StandardMessageCodec {
   const _PigeonCodec();
   @override
@@ -156,7 +155,7 @@ class _PigeonCodec extends StandardMessageCodec {
     if (value is int) {
       buffer.putUint8(4);
       buffer.putInt64(value);
-    } else if (value is DeviceInfoIOS) {
+    }    else if (value is DeviceInfoIOS) {
       buffer.putUint8(129);
       writeValue(buffer, value.encode());
     } else {
@@ -179,13 +178,9 @@ class DeviceInfoHostApi {
   /// Constructor for [DeviceInfoHostApi]. The [binaryMessenger] named argument is
   /// available for dependency injection. If it is left null, the default
   /// BinaryMessenger will be used which routes to the host platform.
-  DeviceInfoHostApi({
-    BinaryMessenger? binaryMessenger,
-    String messageChannelSuffix = '',
-  }) : pigeonVar_binaryMessenger = binaryMessenger,
-       pigeonVar_messageChannelSuffix = messageChannelSuffix.isNotEmpty
-           ? '.$messageChannelSuffix'
-           : '';
+  DeviceInfoHostApi({BinaryMessenger? binaryMessenger, String messageChannelSuffix = ''})
+      : pigeonVar_binaryMessenger = binaryMessenger,
+        pigeonVar_messageChannelSuffix = messageChannelSuffix.isNotEmpty ? '.$messageChannelSuffix' : '';
   final BinaryMessenger? pigeonVar_binaryMessenger;
 
   static const MessageCodec<Object?> pigeonChannelCodec = _PigeonCodec();
@@ -193,8 +188,7 @@ class DeviceInfoHostApi {
   final String pigeonVar_messageChannelSuffix;
 
   Future<DeviceInfoIOS> getDeviceInfo() async {
-    final pigeonVar_channelName =
-        'dev.flutter.pigeon.device_info_plugin_ios.DeviceInfoHostApi.getDeviceInfo$pigeonVar_messageChannelSuffix';
+    final pigeonVar_channelName = 'dev.flutter.pigeon.device_info_plugin_ios.DeviceInfoHostApi.getDeviceInfo$pigeonVar_messageChannelSuffix';
     final pigeonVar_channel = BasicMessageChannel<Object?>(
       pigeonVar_channelName,
       pigeonChannelCodec,
@@ -204,10 +198,11 @@ class DeviceInfoHostApi {
     final pigeonVar_replyList = await pigeonVar_sendFuture as List<Object?>?;
 
     final Object? pigeonVar_replyValue = _extractReplyValueOrThrow(
-      pigeonVar_replyList,
-      pigeonVar_channelName,
-      isNullValid: false,
-    );
+        pigeonVar_replyList,
+        pigeonVar_channelName,
+        isNullValid: false,
+    )
+    ;
     return pigeonVar_replyValue! as DeviceInfoIOS;
   }
 }

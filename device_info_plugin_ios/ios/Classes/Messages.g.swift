@@ -237,7 +237,7 @@ private class MessagesPigeonCodecReader: FlutterStandardReader {
 
 private class MessagesPigeonCodecWriter: FlutterStandardWriter {
   override func writeValue(_ value: Any) {
-""    if let value = value as? DeviceInfoIOS {
+    if let value = value as? DeviceInfoIOS {
       super.writeByte(129)
       super.writeValue(value.toList())
     } else {

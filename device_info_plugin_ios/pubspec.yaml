@@ -25,5 +25,5 @@ flutter:
     implements: device_info_plugin
     platforms:
       ios:
-        dartPluginClass: DeviceInfoPluginIosPlugin
+        dartPluginClass: DeviceInfoPluginPlugin
         pluginClass: DeviceInfoPluginPlugin
