@@ -1,5 +1,5 @@
 PODS:
-  - device_info_plugin_ios (0.0.1):
+  - device_info_plugin_ios (0.0.5):
     - Flutter
   - Flutter (1.0.0)
 
@@ -14,7 +14,7 @@ EXTERNAL SOURCES:
     :path: Flutter
 
 SPEC CHECKSUMS:
-  device_info_plugin_ios: 3d356994031ce48caef8162e6473a3f0ecbfc8fe
+  device_info_plugin_ios: 7df58f78da23bc823b30b19f937632517b592a87
   Flutter: cabc95a1d2626b1b06e7179b784ebcf0c0cde467
 
 PODFILE CHECKSUM: 3c63482e143d1b91d2d2560aee9fb04ecc74ac7e
