@@ -1,3 +1,7 @@
+## 0.0.5
+
+ - **FEAT**(core): register android platform implementation. ([3a46f91b](https://github.com/Thixq/device_info_plugin.git/commit/3a46f91bc466d35469ca9b06d7e327e5f85d4700))
+
 ## 0.0.4
 
  - **FEAT**: add ios plugin. ([21179a2f](https://github.com/Thixq/device_info_plugin.git/commit/21179a2fb5d892fd969dfad3daed1cba21a6b8b1))

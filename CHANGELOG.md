@@ -15,6 +15,32 @@ Packages with breaking changes:
 
 Packages with other changes:
 
+ - [`device_info_plugin` - `v0.0.5`](#device_info_plugin---v005)
+ - [`device_info_plugin_android` - `v0.0.2`](#device_info_plugin_android---v002)
+
+---
+
+#### `device_info_plugin` - `v0.0.5`
+
+ - **FEAT**(core): register android platform implementation. ([3a46f91b](https://github.com/Thixq/device_info_plugin.git/commit/3a46f91bc466d35469ca9b06d7e327e5f85d4700))
+
+#### `device_info_plugin_android` - `v0.0.2`
+
+ - **FEAT**(android): implement android platform plugin using pigeon. ([cf2c5318](https://github.com/Thixq/device_info_plugin.git/commit/cf2c5318a5d7b7df5241014103ead5eec9ed9320))
+
+
+## 2026-07-01
+
+### Changes
+
+---
+
+Packages with breaking changes:
+
+ - There are no breaking changes in this release.
+
+Packages with other changes:
+
  - [`device_info_plugin` - `v0.0.4`](#device_info_plugin---v004)
  - [`device_info_plugin_ios` - `v0.0.5`](#device_info_plugin_ios---v005)
  - [`device_info_plugin_platform_interface` - `v0.0.4`](#device_info_plugin_platform_interface---v004)
