@@ -1,3 +1,8 @@
+## 0.0.5+1
+
+ - **REFACTOR**(ios): rename plugin classes and files to match package name. ([d4d93bc0](https://github.com/Thixq/device_info_plugin.git/commit/d4d93bc087abe7cf4c7cf73c3fa079c77c45b63e))
+ - **FIX**(ios): update podspec version and add missing LICENSE file. ([a915e056](https://github.com/Thixq/device_info_plugin.git/commit/a915e056de8693946bae10ea553de56b3a197dc5))
+
 ## 0.0.5
 
  - **REFACTOR**(ios): rename plugin classes and add example app. ([d2e3f749](https://github.com/Thixq/device_info_plugin.git/commit/d2e3f7490b6fd5e7e412f17e00f799d4ab48773a))

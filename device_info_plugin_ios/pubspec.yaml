@@ -1,6 +1,6 @@
 name: device_info_plugin_ios
 description: A starting point for Dart libraries or applications.
-version: 0.0.5
+version: 0.0.5+1
 repository: https://github.com/Thixq/device_info_plugin/tree/main/device_info_plugin_ios
 
 environment:

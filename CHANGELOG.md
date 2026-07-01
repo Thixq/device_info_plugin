@@ -15,6 +15,33 @@ Packages with breaking changes:
 
 Packages with other changes:
 
+ - [`device_info_plugin_android` - `v0.0.3`](#device_info_plugin_android---v003)
+ - [`device_info_plugin_ios` - `v0.0.5+1`](#device_info_plugin_ios---v0051)
+
+---
+
+#### `device_info_plugin_android` - `v0.0.3`
+
+ - **FEAT**(android): display device model in example app. ([6dc60bc9](https://github.com/Thixq/device_info_plugin.git/commit/6dc60bc93ed9287c8ad9c748c55bddfab240ad77))
+
+#### `device_info_plugin_ios` - `v0.0.5+1`
+
+ - **REFACTOR**(ios): rename plugin classes and files to match package name. ([d4d93bc0](https://github.com/Thixq/device_info_plugin.git/commit/d4d93bc087abe7cf4c7cf73c3fa079c77c45b63e))
+ - **FIX**(ios): update podspec version and add missing LICENSE file. ([a915e056](https://github.com/Thixq/device_info_plugin.git/commit/a915e056de8693946bae10ea553de56b3a197dc5))
+
+
+## 2026-07-01
+
+### Changes
+
+---
+
+Packages with breaking changes:
+
+ - There are no breaking changes in this release.
+
+Packages with other changes:
+
  - [`device_info_plugin` - `v0.0.5`](#device_info_plugin---v005)
  - [`device_info_plugin_android` - `v0.0.2`](#device_info_plugin_android---v002)
 
