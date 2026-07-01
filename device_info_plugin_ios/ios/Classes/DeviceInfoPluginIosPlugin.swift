@@ -1,9 +1,9 @@
 import Flutter
 import UIKit
 
-public class DeviceInfoPluginPlugin: NSObject, FlutterPlugin, DeviceInfoHostApi {
+public class DeviceInfoPluginIosPlugin: NSObject, FlutterPlugin, DeviceInfoHostApi {
   public static func register(with registrar: FlutterPluginRegistrar) {
-    let instance = DeviceInfoPluginPlugin()
+    let instance = DeviceInfoPluginIosPlugin()
     // Setup Pigeon API using the generated setup class
     DeviceInfoHostApiSetup.setUp(binaryMessenger: registrar.messenger(), api: instance)
   }

@@ -3,9 +3,9 @@ import 'package:device_info_plugin_platform_interface/device_info_plugin_platfor
 import 'package:flutter/foundation.dart';
 
 /// The iOS implementation of [DeviceInfoPluginPlatform].
-final class DeviceInfoPluginPlugin extends DeviceInfoPluginPlatform {
-  /// Creates a new instance of [DeviceInfoPluginPlugin].
-  DeviceInfoPluginPlugin({@visibleForTesting DeviceInfoHostApi? hostApi})
+final class DeviceInfoPluginIosPlugin extends DeviceInfoPluginPlatform {
+  /// Creates a new instance of [DeviceInfoPluginIosPlugin].
+  DeviceInfoPluginIosPlugin({@visibleForTesting DeviceInfoHostApi? hostApi})
     : _hostApi = hostApi ?? DeviceInfoHostApi();
 
   final DeviceInfoHostApi _hostApi;
@@ -13,7 +13,7 @@ final class DeviceInfoPluginPlugin extends DeviceInfoPluginPlatform {
   /// Registers this class
   ///  as the default instance of [DeviceInfoPluginPlatform].
   static void registerWith() {
-    DeviceInfoPluginPlatform.instance = DeviceInfoPluginPlugin();
+    DeviceInfoPluginPlatform.instance = DeviceInfoPluginIosPlugin();
   }
 
   /// Returns the iOS device information.
