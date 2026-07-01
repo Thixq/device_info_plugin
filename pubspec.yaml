@@ -9,6 +9,7 @@ environment:
 workspace:
   - device_info_plugin/
   - device_info_plugin_ios/
+  - device_info_plugin_android/
   - device_info_plugin_platform_interface/
 
 dev_dependencies:
