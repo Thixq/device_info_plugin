@@ -1,0 +1,30 @@
+name: device_info_plugin_android
+description: Android implementation of the device_info_plugin.
+version: 0.0.1
+repository: https://github.com/Thixq/device_info_plugin/tree/main/device_info_plugin_android
+
+environment:
+  sdk: ^3.11.5
+resolution: workspace
+
+dependencies:
+  device_info_plugin_platform_interface: ^0.0.4
+  flutter:
+    sdk: flutter
+
+dev_dependencies:
+  build_runner: ^2.15.0
+  flutter_test:
+    sdk: flutter
+  mockito: ^5.6.4
+  pigeon: ^27.1.0
+  very_good_analysis: ^10.2.0
+
+flutter:
+  plugin:
+    implements: device_info_plugin
+    platforms:
+      android:
+        package: com.thixq.deviceinfo.device_info_plugin_android
+        pluginClass: DeviceInfoPluginAndroidPlugin
+        dartPluginClass: DeviceInfoPluginAndroidPlugin
