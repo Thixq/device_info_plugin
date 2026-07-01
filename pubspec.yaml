@@ -3,7 +3,7 @@ repository: https://github.com/Thixq/device_info_plugin.git
 version: 0.0.1
 description: A plugin to get device information in Flutter.
 
-environment: 
+environment:
   sdk: ^3.11.5
 
 workspace:
@@ -16,8 +16,7 @@ dev_dependencies:
 
 melos:
   ide:
-    intellij:
-      false
+    intellij: false
   sdkPath: .fvm/flutter_sdk
   version:
     linktoCommit: true
@@ -30,4 +29,4 @@ melos:
       hooks:
         post: |
           melos exec --depends-on="build_runner" -- "dart run build_runner build --delete-conflicting-outputs"
-
+          melos exec --dir-exists="pigeons" --depends-on="pigeon" -- "dart run pigeon --input pigeons/messages.dart"
